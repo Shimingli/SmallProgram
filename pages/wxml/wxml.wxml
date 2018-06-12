@@ -1,0 +1,79 @@
+
+<view class="index">
+  <view class="head">
+    <view class="title">{{title}}</view>
+    <view class="desc">{{desc}}</view>
+  </view>
+
+  <view class="body">
+   
+    <!-- 数据绑定 -->
+    <view class="{{li_item}}">2.1、内容：{{desc}}</view>
+    <view class="{{li_item}}">2.2、组件属性</view>
+    <view class="{{li_item}}" wx:if="{{condition}}">2.3、控制属性</view>
+    <checkbox class="{{li_item}}" checked="{{true}}">2.4、关键字</checkbox>
+
+    <view class="{{li_item}}" hidden="{{flag?true:false}}">2.5、三元运算</view>
+    <view class="{{li_item}}" >2.6、算数运算 {{integer.a + integer.b}} + {{integer.c}} + integer.d</view>
+    <view class="{{li_item}}" >2.7、字符串运算 {{"hello " + name}}</view>
+
+    <view class="{{li_item}}" >2.8、数据路径运算 {{integer.a}} {{arr[0]}}</view>
+  
+    <!-- 逻辑渲染 -->
+    <view class="{{li_item}}" wx:if="{{length>5}}">3.1、条件判断 6</view>
+    <view class="{{li_item}}" wx:elif="{{length>2}}">3.1、条件判断 2</view>
+    <view class="{{li_item}}" wx:else>3.1、条件判断 1</view>
+
+    <block wx:if="{{true}}">
+        <view class="{{li_item}}"> 3.1、条件判断 block wx:if </view>
+    </block>
+
+    <view class="{{li_item}}">3.2、wx:for渲染：
+        <view wx:for="{{arr}}" wx:for-index="idx" wx:for-item="itemName">
+            {{idx}}: {{itemName}}
+        </view>
+    </view>
+
+    <view class="{{li_item}}"> block wx：for
+        <block wx:for="{{[1, 2, 3]}}">
+            <view> {{index}}: {{item}}</view>
+        </block>
+    </view>
+
+    <view class="{{li_item}}">3.3、wx:key渲染：
+        <switch wx:for="{{objectArr}}" wx:key="unique">
+            {{item.id}}
+        </switch>
+
+        <!-- *this表示 item本身 -->
+        <switch wx:for="{{objectArr}}" wx:key="*this">
+            {{item.unique}}
+        </switch>
+    </view>
+
+    <!-- 模板 -->
+    <template name="myTpl">
+        <view>
+            <text> {{name}}: {{time}} </text>
+        </view>
+    </template>
+    <view class="{{li_item}}">
+        4、模板
+        <template is="myTpl" data="{{...tplItem}}"/>
+    </view>
+    
+    <!-- 组合 -->
+    <view class="{{li_item}}">5.1、组合，
+        <view>--------数组</view>
+        <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+        
+        <view>--------对象</view>
+        <template is="myTpl" data="{{name: title, time: '2016-11-16'}}"></template>
+
+        <view>-------- ...展开对象</view>
+        <template is="myTpl" data="{{...tplItem, time: '2016-11-20'}}"></template>
+    </view>
+  </view>
+
+  
+</view>

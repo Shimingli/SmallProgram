@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/wxml/wxml",
+    "pages/wxml/event",
+    "pages/popMenu/popMenu"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#dd15ff",
+    "navigationBarTitleText": "好好学习，天天向上",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#145262"
+  },
+  "tabBar": {
+    "backgroundColor": "#fbfbfb",
+    "borderStyle": "white",
+    "selectedColor": "#50e3c2",
+    "color": "#aaa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_cake.png",
+        "selectedIconPath": "images/icon_cake.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "中间页面",
+        "iconPath": "images/icon_cake_nor.png",
+        "selectedIconPath": "images/icon_cake_nor.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "关于我",
+        "iconPath": "images/avatar_man_sel.png",
+        "selectedIconPath": "images/avatar_man_sel.png"
+      },
+      {
+        "pagePath": "pages/wxml/wxml",
+        "text": "特效",
+        "iconPath": "images/avatar_man_sel.png",
+        "selectedIconPath": "images/avatar_man_sel.png"
+      },
+      {
+           "pagePath": "pages/popMenu/popMenu",
+            "text": "最多5个",
+            "iconPath": "images/avatar_man_sel.png",
+            "selectedIconPath": "images/avatar_man_sel.png"
+         }
+     
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

@@ -1,0 +1,12 @@
+<!--pages/me/me.wxml-->
+<view class='index'>
+<view class='head'>
+<view class='title'>{{title}}</view>
+<view class='desc'>{{desc}}</view>
+<view> {{ message }} </view>
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+<view> {{a + b}} + {{c}} = {{d}} </view>
+<view>{{"hello" + name}}</view>
+<button bindtap="toEvent">视图层WXML：事件</button>
+</view>
+</view>

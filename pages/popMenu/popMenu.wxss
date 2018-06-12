@@ -1,0 +1,18 @@
+/* pages/popMenu/popMenu.wxss */
+.img-plus-style {  
+  height: 50rpx;  
+  width: 50rpx;  
+  position: absolute;  
+  bottom: 250rpx;  
+  right: 100rpx;  
+  z-index: 100;  
+}  
+  
+.img-style {  
+  height: 50rpx;  
+  width: 50rpx;  
+  position: absolute;  
+  bottom: 250rpx;  
+  right: 100rpx;  
+  opacity: 0;  
+} 

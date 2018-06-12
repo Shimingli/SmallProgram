@@ -1,0 +1,28 @@
+
+<view class="index">
+  <view class="head">
+    <view class="title">{{title}}</view>
+    <view class="desc">事件、引用</view>
+  </view>
+
+  <view class="body">
+        
+    <!-- 冒泡与非冒泡小例 -->
+    <view class="li-item-title">-----冒泡与非冒泡小例</view>
+    <view class="border-view" data-alpha-beta="1" data-alphaBeta="2" id="outter" bindtap="handleTap1">
+        outer view
+        <view class="border-view" id="middle" catchtap="handleTap2">
+            middle view
+            <view class="border-view" id="inner" bindtap="handleTap3">
+            inner view
+            </view>
+        </view>
+    </view>
+
+    <!-- 事件对象 -->
+    <view class="li-item-title">-----事件对象</view>
+
+  </view>
+
+  
+</view>
