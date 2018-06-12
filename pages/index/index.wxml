@@ -4,25 +4,27 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!--<text class="userinfo-nickname">{{userInfo.nickName}}</text>-->
+      <text class="userinfo-nickname">仕明豌豆射手</text>
     </block>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-<navigator url="../logs/logs?id=101&title=世明">
- <view>
- <text class='usertext'>文章1</text>
- </view>
-  <view>
- <text class='usertext1'>文章2</text>
- </view>
-  <view>
- <text class='usertext'>文章3</text>
- </view>
-  <view>
- <text class='usertext'>文章4</text>
- </view>
-</navigator>
-
+  <view class='shiming'>
+    <view class="shiming_title">row</view>
+    <!--flex-direction =弯曲的方向 关键的代码是 flex-direction：row-->
+    <view class='shiming_wrp' style='flex-direction:row'>
+       <!--指定按下去的样式类。当 hover-class="none" 时，没有点击态效果-->
+      <view class='bc_green' hover-class='bc_red'>1</view>
+      <view class='bc_red' hover-class='bc_blue' hover-start-time='100' hover-stay-time='1000'>2</view>
+      <view class='bc_blue'>3</view>
+    </view>
+    <view class="shiming_title">column</view>
+    <view class='shiming_wrp' style='height:300px;flex-direction:column'>
+       <view class='bc_green' >1</view>
+      <view class='bc_red'>2</view>
+      <view class='bc_blue'>3</view>
+    </view>
+  </view>
 </view>

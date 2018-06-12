@@ -23,3 +23,11 @@
 .usertext{
   color: #f00;
 }
+/**display 显示的方向 **/
+.shiming_wrp{
+  display: flex;
+}
+/** 单位改动到 dp 哈哈 有意思 **/
+.bc_green{background: green;width: 100px;height: 100px}
+.bc_red{background: red;width: 100px;height: 100px}
+.bc_blue{background: blue;width: 100px;height: 100px}
