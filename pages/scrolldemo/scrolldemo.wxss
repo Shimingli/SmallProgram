@@ -1,5 +1,60 @@
 /* pages/scrolldemo/scrolldemo.wxss */
-.bc_green{background: green;width: 100px;height: 100px}
-.bc_red{background: red;width: 100px;height: 100px}
-.bc_blue{background: blue;width: 100px;height: 100px}
-.bc_yellow{background: yellow;width: 100px;height: 100px}
+
+.bc_green {
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+.bc_red {
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.bc_blue {
+  background: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.bc_yellow {
+  background: yellow;
+  width: 100px;
+  height: 100px;
+}
+
+.scroll-view_H {
+  width: 100%;
+  white-space: nowrap;
+}
+
+/*  width: 25%; */
+
+.bc_green11 {
+  background: gold;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bc_red11 {
+  background: darkgoldenrod;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.bc_yellow11 {
+  background: seagreen;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.bc_blue11 {
+  background: red;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}

@@ -1,22 +1,25 @@
-<view class='demo'>
-  <view class='demo_title'>vertical scroll</view>
-  <scroll-view scroll-y style='height:500px;' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view id="green" class="bc_green"></view>
-    <view id="red" class="bc_red"></view>
-    <view id="yellow" class="bc_yellow"></view>
-    <view id="blue" class="bc_blue"></view>
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y style="height:220px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
   </scroll-view>
+
   <view class="btn-area">
     <button size="mini" bindtap="tap">click me to scroll into view </button>
     <button size="mini" bindtap="tapMove">click me to scroll</button>
   </view>
-  <view class="section section_gap">
-    <view class="section__title">horizontal scroll</view>
-    <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
-      <view id="green" class="bc_green"></view>
-      <view id="red" class="bc_red"></view>
-      <view id="yellow" class="bc_yellow"></view>
-      <view id="blue" class="bc_blue"></view>
-    </scroll-view>
-  </view>
+</view>
+
+<view class="section section_gap">
+  <view class="section__title">horizontal scroll</view>
+  <scroll-view scroll-x class="scroll-view_H"  bindscrolltoupper="leftclick" style="width: 100%">
+    <button bindtap='button'>我是按鈕</button>
+    <view id="green" class="bc_green11" bindtap="shimingtext">1</view>
+    <view id="red"  class="bc_red11">2</view>
+    <view id="yellow" class="bc_yellow11">3</view>
+    <view id="blue" class="bc_blue11">4</view>
+  </scroll-view>
 </view>

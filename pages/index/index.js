@@ -17,12 +17,11 @@ const app = getApp()
 // 监听页面卸载
 // 在 redirectTo 或 navigateBack 的时候调用
 //Page() 函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
-var order = ['red', 'yellow', 'blue', 'green', 'red']
+
 Page({
   // 页面的初始数据
   data: {
-    toView: 'red',//注意这里有些问题 如果写成 #red 的话，会 id 属性值格式错误。如不能以数字开头。
-    scrollTop: 100,
+
     motto: 'Demo start',
     userInfo: {},
     hasUserInfo: false,
