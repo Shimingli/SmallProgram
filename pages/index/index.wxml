@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<button size="mini" bindtap="tap_to_scroll">去看看scrollView 咋用的 </button>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
@@ -15,7 +16,7 @@
     <view class="shiming_title">row</view>
     <!--flex-direction =弯曲的方向 关键的代码是 flex-direction：row-->
     <view class='shiming_wrp' style='flex-direction:row'>
-       <!--指定按下去的样式类。当 hover-class="none" 时，没有点击态效果-->
+       <!--指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 hover-start-time	Number	50	按住后多久出现点击态，单位毫秒  hover-stay-time	Number	400	手指松开后点击态保留时间，单位毫秒-->
       <view class='bc_green' hover-class='bc_red'>1</view>
       <view class='bc_red' hover-class='bc_blue' hover-start-time='100' hover-stay-time='1000'>2</view>
       <view class='bc_blue'>3</view>
@@ -27,4 +28,6 @@
       <view class='bc_blue'>3</view>
     </view>
   </view>
+   
 </view>
+

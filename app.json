@@ -1,11 +1,13 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/me/me",
     "pages/logs/logs",
     "pages/wxml/wxml",
     "pages/wxml/event",
-    "pages/popMenu/popMenu"
+    "pages/popMenu/popMenu",
+    "pages/scrolldemo/scrolldemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",
