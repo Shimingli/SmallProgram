@@ -2,6 +2,11 @@
 // scroll-view
 // 可滚动视图区域。
 var order = ['red', 'yellow', 'blue', 'green', 'red']
+
+// tip: 请勿在 scroll- view 中使用 textarea、map、canvas、video 组件
+// tip: scroll - into - view 的优先级高于 scroll- top
+// tip: 在滚动 scroll- view 时会阻止页面回弹，所以在 scroll- view 中滚动，是无法触发 onPullDownRefresh
+// tip: 若要使用下拉刷新，请使用页面的滚动，而不是 scroll- view ，这样也能通过点击顶部状态栏回到页面顶部
 Page({
 
   /**
@@ -46,6 +51,7 @@ Page({
       }
     }
   },
+  //scroll-top	Number		设置竖向滚动条位置 不斷的改变方向就行了 ~~~~ 
   tapMove: function (e) {
     console.log("shiming e tapMove" + e)
     this.setData({

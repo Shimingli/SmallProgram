@@ -34,6 +34,12 @@ tap_to_scroll:function(){
     url: '/pages/scrolldemo/scrolldemo',
   })
  },
+ //demo_swiper 
+demo_swiper :function(){
+  wx.navigateTo({
+    url: '/pages/SwiperDemo/SwiperDemo',
+  })
+},
   
   //事件处理函数
   bindViewTap: function() {
