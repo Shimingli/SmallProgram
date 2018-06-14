@@ -7,7 +7,8 @@
     "pages/wxml/event",
     "pages/popMenu/popMenu",
     "pages/scrolldemo/scrolldemo",
-    "pages/SwiperDemo/SwiperDemo"
+    "pages/SwiperDemo/SwiperDemo",
+    "pages/SwiperDemo/SwiperDemoAnather"
   ],
   "window": {
     "backgroundTextStyle": "dark",
