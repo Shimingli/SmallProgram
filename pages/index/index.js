@@ -21,7 +21,6 @@ const app = getApp()
 Page({
   // 页面的初始数据
   data: {
-
     motto: 'Demo start',
     userInfo: {},
     hasUserInfo: false,
@@ -40,6 +39,17 @@ demo_swiper :function(){
     url: '/pages/SwiperDemo/SwiperDemo',
   })
 },
+
+demo_basic_content : function(){
+  wx.navigateTo({
+    url: '/pages/BasicContent/BasicContent',
+  })
+},
+  demo_form_demo: function(){
+    wx.navigateTo({
+      url: '/pages/FormDemo/FormDemo',
+    })
+  },
   
   //事件处理函数
   bindViewTap: function() {

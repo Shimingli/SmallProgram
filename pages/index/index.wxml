@@ -1,7 +1,9 @@
 <!--index.wxml-->
 <view class='container_index'>
 <button size="mini" bindtap="tap_to_scroll">去看看scrollView 咋用的 </button>
-  <button size="mini" bindtap="demo_swiper" >swiper滑块视图容器 </button>
+<button size="mini" bindtap="demo_swiper" >swiper滑块视图容器 </button> 
+<button size="mini" bindtap="demo_basic_content" >基础内容(Basic Content)</button>  
+<button size="mini" bindtap="demo_form_demo" >表单(Form)Demo</button> 
 </view>
 
 <view class="container">
