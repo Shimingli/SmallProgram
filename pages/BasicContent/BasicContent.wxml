@@ -1,0 +1,25 @@
+<!--pages/BasicContent/BasicContent.wxml-->
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/><!--item 好像也是死的啊 我去 改动了也不行啊 -->
+  </block>
+</view>
+
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view>
+
+<view class='container_index'>
+<button size="mini" bindtap="text_demo">去看看text文本。 </button>
+<button size="mini" bindtap="demo_swiper" >swiper滑块视图容器 </button> 
+<button size="mini" bindtap="demo_basic_content" >基础内容(Basic Content)</button>
+</view>

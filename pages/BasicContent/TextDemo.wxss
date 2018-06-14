@@ -1,0 +1,11 @@
+/* pages/BasicContent/TextDemo.wxss */
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+.textDemo{
+  display: block;
+}
+progress{
+  margin: 20px
+}

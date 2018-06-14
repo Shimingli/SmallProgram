@@ -1,0 +1,4 @@
+<!--pages/FormDemo/FormDemo.wxml-->
+<view class='container_index'>
+<button size="mini" bindtap="button">button按钮 </button>
+</view>
