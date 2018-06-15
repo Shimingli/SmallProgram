@@ -32,40 +32,61 @@ var pageObject = {
     plain: false,
     loading: false
   },
+  //disabled	Boolean	false	是否禁用 
   setDisabled: function (e) {
     this.setData({
       disabled: !this.data.disabled
     })
   },
+  // plain	Boolean	false	按钮是否镂空，背景色透明
   setPlain: function (e) {
     this.setData({
       plain: !this.data.plain
     })
   },
+  // loading	Boolean	false	名称前是否带 loading 图标		
   setLoading: function (e) {
     this.setData({
       loading: !this.data.loading
     })
   },
+  //getUserInfo	获取用户信息，可以从bindgetuserinfo回调中获取到用户信息	1.3.0
   onGotUserInfo: function (e) {
     console.log(e.detail.errMsg)
     console.log(e.detail.userInfo)
     console.log(e.detail.rawData)
   },
+  //麻痹注意是那个事件啊 傻逼
+  primary: function () {
+    console.log("shiming dainle wo ")
+    //console.log("shiming---" + types[i])
+   // console.log("shiming---type" + type)
+  //   pageObject[type] = function (e) {
+  //     var key = type + 'Size'
+  //     var changedData = {}
+  //     changedData[key] =
+  //       this.data[key] === 'default' ? 'mini' : 'default'
+  //     this.setData(changedData)
+  //   }
+  },
+
 }
 
-for (var i = 0; i < types.length; ++i) {
-  (function (type) {
-    console.log("shiming---" + types[i])
-    console.log("shiming---type" + type)
-    pageObject[type] = function (e) {
-      var key = type + 'Size'
-      var changedData = {}
-      changedData[key] =
-        this.data[key] === 'default' ? 'mini' : 'default'
-      this.setData(changedData)
-    }
-  })(types[i])
-}
+//个人理解就是 通过这个方法，可以让用户改变按钮的大小 老子看不懂 那么可以自己写一个
+//我可牛逼了 
+//console.log("shiming--- types.length=" + types.length),
+// for (var i = 0; i < types.length; ++i) {
+//   (function (type) {
+//     console.log("shiming---" + types[i])
+//     console.log("shiming---type" + type)
+//     pageObject[type] = function (e) {
+//       var key = type + 'Size'
+//       var changedData = {}
+//       changedData[key] =
+//         this.data[key] === 'default' ? 'mini' : 'default'
+//       this.setData(changedData)
+//     }
+//   })(types[i])
+// }
 
 Page(pageObject)

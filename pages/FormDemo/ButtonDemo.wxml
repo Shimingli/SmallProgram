@@ -7,6 +7,16 @@
 <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
 <button bindtap="setPlain">点击设置以上按钮plain属性</button>
 <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+
+<!-- open-type 有效值：
+contact	打开客服会话	1.1.0
+share	触发用户转发，使用前建议先阅读使用指引	1.2.0
+getUserInfo	获取用户信息，可以从bindgetuserinfo回调中获取到用户信息	1.3.0
+getPhoneNumber	获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，具体说明	1.2.0
+launchApp	打开APP，可以通过app-parameter属性设定向APP传的参数具体说明	1.9.5
+openSetting	打开授权设置页	2.0.7
+feedback	打开“意见反馈”页面，用户可提交反馈内容并上传日志，开发者可以登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到反馈内容 -->
+
 <button open-type="contact">进入客服会话</button>
 <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
 
