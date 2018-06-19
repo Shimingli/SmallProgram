@@ -1,0 +1,9 @@
+<!--pages/FormDemo/CheckboxGroupDemo.wxml  
+
+label用来改进表单组件的可用性，使用for属性找到对应的id，或者将控件放在该标签下，当点击时，就会触发对应的控件。
+for优先级高于内部控件，内部有多个控件的时候默认触发第一个控件。 后面讲到 这个到底是怎么用的 -->
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled='{{item.disabled}}' />{{item.value}}
+  </label>
+</checkbox-group>
