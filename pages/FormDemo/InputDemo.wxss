@@ -1,0 +1,6 @@
+/* pages/FormDemo/InputDemo.wxss */
+ @import "/utils/weui.wxss"; 
+
+.page-section{
+  margin-bottom: 20rpx;
+}
