@@ -17,6 +17,21 @@ Page({
       url: '/pages/FormDemo/CheckboxGroupDemo',
     })
   },
+  formDemo: function () {
+    wx.navigateTo({
+      url: '/pages/FormDemo/FormDemoIndex',//表单
+    })
+  },
+  input: function () {
+    wx.navigateTo({
+      url: '/pages/FormDemo/InputDemo',//input 输入框。
+    })
+  },
+  labelDemo : function(){
+    wx.navigateTo({
+      url: '/pages/FormDemo/LabelDemo',//label 
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

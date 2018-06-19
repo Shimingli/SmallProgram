@@ -25,7 +25,8 @@ Page({
     if (e.detail.value=="TUR"){
       console.log("shiming "+arr)
       console.log("shiming " +e.detail) 
-      // e.detail
+       var checlk= e.detail;
+       
     }
   },
   /**

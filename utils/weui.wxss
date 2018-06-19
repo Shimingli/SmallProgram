@@ -37,7 +37,7 @@ icon {
   border-bottom: 1rpx solid #D9D9D9;
   color: #D9D9D9;
 }
-.weui-cells__title {
+.weui-cells__title {/*-- DemoInput控件使用到的格式 --*/
   margin-top: .77em;
   margin-bottom: .3em;
   padding-left: 15px;

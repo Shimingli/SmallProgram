@@ -2,4 +2,7 @@
 <view class='container_index'>
 <button size="mini" bindtap="button">button按钮 </button>
 <button size="mini" bindtap="checkboxGroup">checkbox-group </button>
+<button size="mini" bindtap="formDemo">form表单 </button>  
+<button size="mini" bindtap="input">input 输入框 </button> 
+<button size='mini' bindtap="labelDemo">label的标签 </button>
 </view>

@@ -13,8 +13,10 @@
     "pages/BasicContent/TextDemo",
     "pages/FormDemo/FormDemo",
     "pages/FormDemo/ButtonDemo",
-    "pages/FormDemo/CheckboxGroupDemo"
-
+    "pages/FormDemo/CheckboxGroupDemo",
+    "pages/FormDemo/FormDemoIndex",
+    "pages/FormDemo/InputDemo",
+    "pages/FormDemo/LabelDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",
