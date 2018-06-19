@@ -1,4 +1,8 @@
 <!--pages/FormDemo/LabelDemo.wxml-->
+<!--label
+用来改进表单组件的可用性，使用for属性找到对应的id，或者将控件放在该标签下，当点击时，就会触发对应的控件。
+for优先级高于内部控件，内部有多个控件的时候默认触发第一个控件。
+目前可以绑定的控件有：<button/>, <checkbox/>, <radio/>, <switch/>。-->
 <view class="section section_gap">
 <view class="section__title">表单组件在label内</view>
 <checkbox-group class="group" bindchange="checkboxChange">
@@ -6,7 +10,9 @@
     <label>
       <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
       <view class="label-1__icon">
-        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+        <!-- wxml文件中 ：style="opacity:{{number}}"   
+number代表透明度的值 取值范围0—1  1代表不透明 0代表全透明  -->
+        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0.5}}"></view>
       </view>
       <text class="label-1__text">{{item.value}}</text>
     </label>
@@ -18,9 +24,11 @@
 <view class="section__title">label用for标识表单组件</view>
 <radio-group class="group" bindchange="radioChange">
   <view class="label-2" wx:for="{{radioItems}}">
-    <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+  <!-- radio-group
+单项选择器，内部由多个<radio/>组成。 还是不要隐藏了  哈哈哈哈 -->
+    <radio id="{{item.name}}" hidden="false" value="{{item.name}}" checked="{{item.checked}}"></radio>
     <view class="label-2__icon">
-      <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0.2}}"></view>
     </view>
     <label class="label-2__text" for="{{item.name}}"><text>{{item.name}}</text></label>
   </view>

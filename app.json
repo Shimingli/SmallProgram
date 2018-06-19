@@ -16,7 +16,9 @@
     "pages/FormDemo/CheckboxGroupDemo",
     "pages/FormDemo/FormDemoIndex",
     "pages/FormDemo/InputDemo",
-    "pages/FormDemo/LabelDemo"
+    "pages/FormDemo/LabelDemo",
+    "pages/FormDemo/SliderDemo",
+    "pages/FormDemo/PickerDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

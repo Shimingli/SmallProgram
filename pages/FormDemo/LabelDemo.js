@@ -21,13 +21,21 @@ Page({
   },
   checkboxChange: function (e) {
     var checked = e.detail.value
+    console.log("shiming checked 需要变更的值==="+checked)
     var changed = {}
+    console.log("shiming checked  this.data.checkboxItems.length;===" + this.data.checkboxItems.length)
+    for (var i = 0; i < this.data.checkboxItems.length;i++){
+      console.log("shiming checkboxItems 需要变更的值===" + this.data.checkboxItems[i].name)
+    }
     for (var i = 0; i < this.data.checkboxItems.length; i++) {
       if (checked.indexOf(this.data.checkboxItems[i].name) !== -1) {
         changed['checkboxItems[' + i + '].checked'] = true
       } else {
         changed['checkboxItems[' + i + '].checked'] = false
       }
+    }
+    for (var i = 0; i < this.data.checkboxItems.length; i++) {
+      console.log("shiming checkboxItems 变更后的值===" + this.data.checkboxItems[i].name)
     }
     this.setData(changed)
   },

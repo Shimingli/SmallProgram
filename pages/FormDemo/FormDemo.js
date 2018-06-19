@@ -32,6 +32,18 @@ Page({
       url: '/pages/FormDemo/LabelDemo',//label 
     })
   },
+  slider :function(){
+    wx.navigateTo({
+      url: '/pages/FormDemo/SliderDemo',//slider 
+    })
+  },
+  // picker
+  // 从底部弹起的滚动选择器，现支持五种选择器，通过mode来区分，分别是普通选择器，多列选择器，时间选择器，日期选择器，省市区选择器，默认是普通选择器。
+  picker :function(){
+    wx.navigateTo({
+      url: '/pages/FormDemo/PickerDemo',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
