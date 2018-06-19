@@ -52,9 +52,9 @@ var pageObject = {
   },
   //getUserInfo	获取用户信息，可以从bindgetuserinfo回调中获取到用户信息	1.3.0
   onGotUserInfo: function (e) {
-    console.log(e.detail.errMsg)
-    console.log(e.detail.userInfo)
-    console.log(e.detail.rawData)
+    console.log("shiming--->onGotUserInfo"+e.detail.errMsg)
+    console.log("shiming--->onGotUserInfo" +e.detail.userInfo)
+    console.log("shiming--->onGotUserInfo" +e.detail.rawData)
   },
   //麻痹注意是那个事件啊 傻逼
   primary: function () {

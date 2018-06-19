@@ -88,9 +88,9 @@ icon {
           align-items: flex-start;
 }
 .weui-cell__bd {
-  -webkit-box-flex: 1;
+   -webkit-box-flex: 1;/*定义两个可伸缩的 p 元素  可以把三个元素注释掉，可以看出很明显的差别*/
   -webkit-flex: 1;
-          flex: 1;
+          flex: 1; 
 }
 .weui-cell__ft {
   text-align: right;

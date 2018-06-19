@@ -1,4 +1,5 @@
 <!--pages/FormDemo/FormDemo.wxml-->
 <view class='container_index'>
 <button size="mini" bindtap="button">button按钮 </button>
+<button size="mini" bindtap="checkboxGroup">checkbox-group </button>
 </view>
