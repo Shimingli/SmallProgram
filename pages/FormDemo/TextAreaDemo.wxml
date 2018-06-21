@@ -1,0 +1,16 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="page-section-title">输入区域高度自适应，不会出现滚动条</view>
+    <view class="textarea-wrp">
+     <!-- bindblur	EventHandle		输入框失去焦点时触发，event.detail = { value, cursor } -->
+      <textarea bindblur="bindTextAreaBlur" auto-height />
+    </view>
+  </view>
+  <!--就是输入得输入框 让那个光标跟着你的字在走动  -->
+  <view class="page-section">
+    <view class="page-section-title">这是一个可以自动聚焦的textarea</view>
+    <view class="textarea-wrp">
+      <textarea auto-focus="true" style="height: 3em" />
+    </view>
+  </view>
+</view>
