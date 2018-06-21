@@ -1,0 +1,4 @@
+/* pages/navigate/redirect.wxss */
+.color_style {
+    color:blueviolet;
+}

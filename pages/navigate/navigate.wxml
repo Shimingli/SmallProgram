@@ -1,0 +1,17 @@
+<!--pages/navigate/navigate.wxml-->
+<view style="text-align:center"> {{title}} </view>
+<!-- url	String		当前小程序内的跳转链接 -->
+<!-- open-type	String	navigate	跳转方式 -->
+<!-- 
+open-type 有效值：
+值	说明	最低版本
+navigate	对应 wx.navigateTo 或 wx.navigateToMiniProgram 的功能	
+redirect	对应 wx.redirectTo 的功能	
+switchTab	对应 wx.switchTab 的功能	
+reLaunch	对应 wx.reLaunch 的功能	1.1.0
+navigateBack	对应 wx.navigateBack 的功能	1.1.0
+exit	退出小程序，target="miniProgram"时生效	2.1.0 -->
+
+
+<!-- over-class	String	navigator-hover	指定点击时的样式类，当hover-class="none"时，没有点击态效果 -->
+<navigator url="/pages/navigate/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>

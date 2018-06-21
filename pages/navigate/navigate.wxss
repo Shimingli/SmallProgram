@@ -1,0 +1,5 @@
+/* pages/navigate/navigate.wxss */
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}

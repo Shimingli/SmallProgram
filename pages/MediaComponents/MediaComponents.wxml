@@ -1,0 +1,5 @@
+<!--pages/MediaComponents/MediaComponents.wxml-->
+<view class='container_index'>
+<button size="mini" bindtap="audio">audio这个要废弃掉，不在维护了</button>
+<button size="mini" bindtap="audio1">audio最新的方式</button>
+</view>
