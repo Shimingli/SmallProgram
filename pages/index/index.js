@@ -50,7 +50,7 @@ demo_basic_content : function(){
       url: '/pages/FormDemo/FormDemo',
     })
   },
-  
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

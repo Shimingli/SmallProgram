@@ -4,6 +4,9 @@
 <button size="mini" bindtap="demo_swiper" >swiper滑块视图容器 </button> 
 <button size="mini" bindtap="demo_basic_content" >基础内容(Basic Content)</button>  
 <button size="mini" bindtap="demo_form_demo" >表单(Form)Demo</button> 
+<navigator url="/pages/navigate/navigate?title=navigate" hover-class="navigator-hover" >跳转到新页面</navigator> 
+<!-- <navigator url="/pages/MediaComponents/MediaComponents?title=ddd" hover-class="navigator-hover" >媒体组件</navigator>  -->
+
 </view>
 
 <view class="container">

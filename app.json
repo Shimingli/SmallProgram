@@ -20,7 +20,12 @@
     "pages/FormDemo/SliderDemo",
     "pages/FormDemo/PickerDemo",
     "pages/FormDemo/PickerViewDemo",
-    "pages/FormDemo/TextAreaDemo"
+    "pages/FormDemo/TextAreaDemo",
+    "pages/navigate/navigate",
+    "pages/navigate/redirect",
+    "pages/MediaComponents/MediaComponents",
+    "pages/MediaComponents/AudioDemo",
+    "pages/MediaComponents/AudioNewDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -43,8 +48,8 @@
         "selectedIconPath": "images/icon_cake.png"
       },
       {
-        "pagePath": "pages/me/me",
-        "text": "中间页面",
+        "pagePath": "pages/MediaComponents/MediaComponents",
+        "text": "媒体组件",
         "iconPath": "images/icon_cake_nor.png",
         "selectedIconPath": "images/icon_cake_nor.png"
       },
