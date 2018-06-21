@@ -18,7 +18,9 @@
     "pages/FormDemo/InputDemo",
     "pages/FormDemo/LabelDemo",
     "pages/FormDemo/SliderDemo",
-    "pages/FormDemo/PickerDemo"
+    "pages/FormDemo/PickerDemo",
+    "pages/FormDemo/PickerViewDemo",
+    "pages/FormDemo/TextAreaDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

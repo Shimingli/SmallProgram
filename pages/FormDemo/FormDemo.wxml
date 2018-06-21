@@ -6,5 +6,7 @@
 <button size="mini" bindtap="input">input 输入框 </button> 
 <button size='mini' bindtap="labelDemo">label的标签 </button>
 <button size='mini' bindtap="slider">slider滑动选择器。 </button>
-<button size='mini' bindtap="picker">从底部弹起的滚动选择器，现支持五种选择器，通过mode来区分，分别是普通选择器，多列选择器，时间选择器，日期选择器，省市区选择器，默认是普通选择器 </button>
+<button size='mini' bindtap="picker">从底部弹起的滚动选择器</button>
+<button size='mini' bindtap="pickerview">picker-view 嵌入页面的滚动选择器</button>
+<button size='mini' bindtap="textarea">textarea多行输入框。</button>
 </view>

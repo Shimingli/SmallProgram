@@ -44,6 +44,16 @@ Page({
       url: '/pages/FormDemo/PickerDemo',
     })
   },
+  pickerview :function(){
+    wx.navigateTo({
+      url: '/pages/FormDemo/PickerViewDemo',
+    })
+  },
+  textarea : function(){
+     wx.navigateTo({
+       url: '/pages/FormDemo/TextAreaDemo',//多行输入框 
+     })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
