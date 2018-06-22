@@ -1,0 +1,19 @@
+/* pages/MediaComponents/VideoDemo.wxss */
+
+@import "/utils/weui.wxss";
+.weui-cells{
+  margin-top: 80rpx;
+  text-align: left;
+}
+.weui-label{
+  width: 5em;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+.weui-input {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
