@@ -26,7 +26,9 @@
     "pages/MediaComponents/MediaComponents",
     "pages/MediaComponents/AudioDemo",
     "pages/MediaComponents/AudioNewDemo",
-    "pages/MediaComponents/ImageDemo"
+    "pages/MediaComponents/ImageDemo",
+    "pages/MediaComponents/VideoDemo",
+    "pages/MediaComponents/CameraDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

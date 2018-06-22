@@ -24,6 +24,16 @@ Page({
        url: '/pages/MediaComponents/ImageDemo',
      })
   },
+  videodemo :function(){
+     wx.navigateTo({
+       url: '/pages/MediaComponents/VideoDemo',
+     })
+  },
+  camerademo :function(){
+     wx.navigateTo({
+       url: '/pages/MediaComponents/CameraDemo',
+     })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

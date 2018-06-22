@@ -14,10 +14,10 @@
 Page({
   data: {
     array: [{
-      mode: 'scaleToFill',
+      mode: 'scaleToFill',//相当于fitxy
       text: 'scaleToFill：不保持纵横比缩放图片，使图片完全适应'
     }, {
-      mode: 'aspectFit',
+      mode: 'aspectFit',//
       text: 'aspectFit：保持纵横比缩放图片，使图片的长边能完全显示出来'
     }, {
       mode: 'aspectFill',
