@@ -20,8 +20,14 @@ Page({
    */
   data: {
   
+  }, 
+//   functional-page - navigator   感觉我还不会用啊   这个有点问题 
+// 这个组件从小程序基础库版本 2.1.0 开始支持。
+//   仅在插件的自定义组件中有效，用于跳转到插件功能页。
+  loginSuccess: function (e) {
+    console.log(e.detail.code) // wx.login 的 code
+    console.log(e.detail.userInfo) // wx.getUserInfo 的 userInfo
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

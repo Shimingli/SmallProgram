@@ -18,6 +18,12 @@ Page({
       url: '/pages/MediaComponents/AudioNewDemo',
     })
   },
+
+  iamgedemo: function(){
+     wx.navigateTo({
+       url: '/pages/MediaComponents/ImageDemo',
+     })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

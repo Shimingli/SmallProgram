@@ -15,3 +15,7 @@ exit	退出小程序，target="miniProgram"时生效	2.1.0 -->
 
 <!-- over-class	String	navigator-hover	指定点击时的样式类，当hover-class="none"时，没有点击态效果 -->
 <navigator url="/pages/navigate/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+
+<functional-page-navigator name="loginAndGetUserInfo" bind:success="loginSuccess">
+  <button>登录到插件</button>
+</functional-page-navigator>

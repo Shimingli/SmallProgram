@@ -25,7 +25,8 @@
     "pages/navigate/redirect",
     "pages/MediaComponents/MediaComponents",
     "pages/MediaComponents/AudioDemo",
-    "pages/MediaComponents/AudioNewDemo"
+    "pages/MediaComponents/AudioNewDemo",
+    "pages/MediaComponents/ImageDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",
