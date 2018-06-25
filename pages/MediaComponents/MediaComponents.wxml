@@ -7,4 +7,12 @@
 
  <button size='mini' type='primary' bindtap='camerademo' >CameraDemo 摄像头</button> 
 
+
+<text >在这里我们做详细的说明，就是还有两个Demo没有说明，一个是live-player
+基础库 1.7.0 开始支持，低版本需做兼容处理
+实时音视频播放。</text>
+<text>live-pusher
+基础库 1.7.0 开始支持，低版本需做兼容处理
+实时音视频录制。
+需要用户授权 scope.camera、scope.record。</text>
 </view>

@@ -28,7 +28,8 @@
     "pages/MediaComponents/AudioNewDemo",
     "pages/MediaComponents/ImageDemo",
     "pages/MediaComponents/VideoDemo",
-    "pages/MediaComponents/CameraDemo"
+    "pages/MediaComponents/CameraDemo",
+    "pages/Map/MapDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -57,7 +58,7 @@
         "selectedIconPath": "images/icon_cake_nor.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/Map/MapDemo",
         "text": "关于我",
         "iconPath": "images/avatar_man_sel.png",
         "selectedIconPath": "images/avatar_man_sel.png"
