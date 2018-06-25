@@ -26,41 +26,43 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
+
   //navigateTo:fail url "pages/index/pages/scrolldemo/scrolldemo" is not in app.json 
   //原因是少了 '/pages/scrolldemo/scrolldemo' 前面少了一个 / 符号 
-tap_to_scroll:function(){
-  wx.navigateTo({
-    url: '/pages/scrolldemo/scrolldemo',
-  })
- },
- //demo_swiper 
-demo_swiper :function(){
-  wx.navigateTo({
-    url: '/pages/SwiperDemo/SwiperDemo',
-  })
-},
+  tap_to_scroll: function() {
+    wx.navigateTo({
+      url: '/pages/scrolldemo/scrolldemo',
+    })
+  },
+  //demo_swiper 
+  demo_swiper: function() {
+    wx.navigateTo({
+      url: '/pages/SwiperDemo/SwiperDemo',
+    })
+  },
 
-demo_basic_content : function(){
-  wx.navigateTo({
-    url: '/pages/BasicContent/BasicContent',
-  })
-},
-  demo_form_demo: function(){
+  demo_basic_content: function() {
+    wx.navigateTo({
+      url: '/pages/BasicContent/BasicContent',
+    })
+  },
+  demo_form_demo: function() {
     wx.navigateTo({
       url: '/pages/FormDemo/FormDemo',
     })
   },
-  gotocanvas : function(){
-     wx.navigateTo({
-       url: '/pages/Canvas/CanvasDemo',
-     })
+  gotocanvas: function() {
+    wx.navigateTo({
+      url: '/pages/Canvas/CanvasDemo',
+    })
   },
-  gotoopendata :function(){
+  gotoopendata: function() {
     wx.navigateTo({
       url: '/pages/OpenData/OpenDataDemo',
     })
   },
-  webviewdemo :function(){
+  webviewdemo: function() {
     wx.navigateTo({
       url: '/pages/WebView/WebViewDemo',
     })
@@ -71,23 +73,24 @@ demo_basic_content : function(){
       url: '../logs/logs'
     })
   },
-  onUnload :function(){
+  onUnload: function() {
     console.log("shiming index onUnload")
+
   },
-  onHide :function(){
+  onHide: function() {
     console.log("shiming index onHide ")
   },
-  onShow : function(){
+  onShow: function() {
     console.log("shiming index onShow")
   },
-  onReady: function(){
+  onReady: function() {
     console.log("shiming  index onReady")
   },
-//   onPullDownRefresh   
-// 监听用户下拉动
-// 1）需要在config的window选项中开启enablePullDownRefresh。
-// 2）当处理完数据刷新后，wx.stopPullDownRefresh 可以停止当前页面的下拉刷新。
-  onPullDownRefresh : function(){
+  //   onPullDownRefresh   
+  // 监听用户下拉动
+  // 1）需要在config的window选项中开启enablePullDownRefresh。
+  // 2）当处理完数据刷新后，wx.stopPullDownRefresh 可以停止当前页面的下拉刷新。
+  onPullDownRefresh: function() {
     console.log("shiming  index onPullDownRefresh")
     wx.stopPullDownRefresh
   },
@@ -97,27 +100,27 @@ demo_basic_content : function(){
    * 和 onPullDownRefresh 事件相对于，只有onPullDownRefresh的事件触发了，这个事件才会触发
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom : function(){
+  onReachBottom: function() {
     console.log("shiming index onReachBottom")
   },
   /**
    * 	生命周期函数--监听页面卸载 好像废弃掉了
    */
-  onUnLoad :function(){
+  onUnLoad: function() {
     console.log("shiming index onUnLoad")
   },
   /**
    * onShareAppMessage  用户点击右上角转发
    */
-  onShareAppMessage :function(){
-     console.log("shiming index onShareAppMessage");
+  onShareAppMessage: function() {
+    console.log("shiming index onShareAppMessage");
   },
   /**
    * 代码没有提醒出这个方法是否的有效，但是呢，实际上这个方法是有效果的哦
    * 页面滚动触发事件的处理函数 onPageScroll
    */
-  onPageScroll : function(){
-     console.log("shiming index onPageScroll")
+  onPageScroll: function() {
+    console.log("shiming index onPageScroll")
   },
   /**
    * onTabItemTap 这个方法，就好像多次的点击了下面的Tab的时候，都会执行
@@ -126,21 +129,21 @@ demo_basic_content : function(){
    * 我在想能不能 调用里面的方法 
    * 如果下面的方法注释掉的话，会调用这个方法
    */
-  onTabItemTap :function(){
+  onTabItemTap: function() {
     console.log("shiming index onTabItemTap");
   },
   /**
    * 如果不注释，多次的点击看看,只有第二次的点击才会走这个方法 
    */
   onTabItemTap(item) {
-    console.log("shiming index item.index=="+item.index)
-    console.log("shiming index item.pagePath=="+item.pagePath)
-    console.log("shiming index item.text=="+item.text)
+    console.log("shiming index item.index==" + item.index)
+    console.log("shiming index item.pagePath==" + item.pagePath)
+    console.log("shiming index item.text==" + item.text)
   },
   customData: {
     hi: 'MINA'
   },
-  onLoad: function () {
+  onLoad: function() {
     console.log("shiming index onLoad")
     var logs = wx.getStorageSync('logs') || []
     logs.unshift("首页在加载了")
@@ -153,7 +156,7 @@ demo_basic_content : function(){
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -176,13 +179,50 @@ demo_basic_content : function(){
         }
       })
     }
+
+
+    const dddd = wx.request({
+      url: 'http://newtest.haokukeji.com:40000/blissbreakfast-gateway-web/homePage/info?module=slide', //仅为示例，并非真实的接口地址
+      data: {
+        // token: '84d415cc5cd744cbbe15eaca9c156684eH29yK',
+        // udid: 'ffffffff-fcff - 343a-0000 - 00001c6e0aa9',
+        // boxId:"SZ-B10027",
+        //api-agent:"os/android7.0;device_type/EVA- DL00;channel/haoku"
+      },
+      // token: 84d415cc5cd744cbbe15eaca9c156684eH29yK
+      //   udid: ffffffff-fcff - 343a-0000 - 00001c6e0aa9
+      // boxId: SZ-B10027
+      //  api-agent: os/android7.0;device_type/EVA- DL00;channel/haoku
+      header: {
+         'version ': 'coolfood.android.2.10.5 ',
+          'token ': '84d415cc5cd744cbbe15eaca9c156684eH29yK ',
+          'udid ': 'ffffffff - fcff - 343a-0000 - 00001c6e0aa9 ',
+          'boxId ': 'SZ-B10027 ',
+          'api-agent ': 'os/android7.0;device_type/EVA- DL00;channel/haoku'
+      },
+      success: function (res) {
+        console.log("shiming" + res.data)
+      },
+      fail: function (e) {
+        console.log("shiming fail" + e.toString())
+      },
+      complete: function () {
+        console.log("shiming complete")
+      }
+    }
+    )
+   // dddd.abort(); // 取消请求任务
   },
   getUserInfo: function(e) {
-    console.log("shiming e"+e)
+    console.log("shiming e" + e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+
+
+
 })
