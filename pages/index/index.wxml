@@ -6,7 +6,9 @@
 <button size="mini" bindtap="demo_form_demo" >表单(Form)Demo</button> 
 <navigator url="/pages/navigate/navigate?title=navigate" hover-class="navigator-hover" >跳转到新页面</navigator> 
 <!-- <navigator url="/pages/MediaComponents/MediaComponents?title=ddd" hover-class="navigator-hover" >媒体组件</navigator>  -->
-
+<button size='mini' bindtap='gotocanvas'>去画布Demo</button>
+<button size='mini' bindtap='gotoopendata'>开放的能力</button>
+<button size='mini' bindtap='webviewdemo'>webviewDemo</button>web-view 组件是一个可以用来承载网页的容器，会自动铺满整个小程序页面。个人类型与海外类型的小程序暂不支持使用。
 </view>
 
 <view class="container">

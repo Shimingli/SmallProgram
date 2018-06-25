@@ -50,7 +50,21 @@ demo_basic_content : function(){
       url: '/pages/FormDemo/FormDemo',
     })
   },
-
+  gotocanvas : function(){
+     wx.navigateTo({
+       url: '/pages/Canvas/CanvasDemo',
+     })
+  },
+  gotoopendata :function(){
+    wx.navigateTo({
+      url: '/pages/OpenData/OpenDataDemo',
+    })
+  },
+  webviewdemo :function(){
+    wx.navigateTo({
+      url: '/pages/WebView/WebViewDemo',
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

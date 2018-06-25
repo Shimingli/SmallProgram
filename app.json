@@ -29,7 +29,11 @@
     "pages/MediaComponents/ImageDemo",
     "pages/MediaComponents/VideoDemo",
     "pages/MediaComponents/CameraDemo",
-    "pages/Map/MapDemo"
+    "pages/Map/MapDemo",
+    "pages/Canvas/CanvasDemo",
+    "pages/Canvas/CanvasDemoAnother",
+    "pages/OpenData/OpenDataDemo",
+    "pages/WebView/WebViewDemo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

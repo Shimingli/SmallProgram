@@ -1,6 +1,6 @@
 <view class="page-body">
   <view class="page-section page-section-gap">
-  <!-- longitude	Number		中心经度	
+<!-- longitude	Number		中心经度	
 latitude	Number		中心纬度	
 scale	Number	16	缩放级别，取值范围为5-18	
 markers	Array		标记点	
