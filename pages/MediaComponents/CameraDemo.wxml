@@ -1,5 +1,14 @@
 <view class="page-body">
   <view class="page-body-wrapper">
+<!-- mode	String	normal	有效值为 normal, scanCode	2.1.0
+device-position	String	back	前置或后置，值为front, back	
+flash	String	auto	闪光灯，值为auto, on, off	
+scan-area	Array		扫码识别区域，格式为[x, y, w, h]，x,y是相对于camera显示区域的左上角，w,h为区域宽度，单位px，仅在 mode="scanCode" 时生效	2.1.0
+bindstop	EventHandle		摄像头在非正常终止时触发，如退出后台等情况	
+binderror	EventHandle		用户不允许使用摄像头时触发	
+bindscancode	EventHandle		在成功识别到一维码时触发，仅在 mode="scanCode" 时生效 -->
+
+    //会自动的去获取权限  这个就比较的调了 
     <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
     <view class="btn-area">
       <button type="primary" bindtap="takePhoto">拍照</button>

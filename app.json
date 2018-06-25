@@ -33,7 +33,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#dd15ff",
-    "navigationBarTitleText": "好好学习，天天向上",
+    "navigationBarTitleText": "好好学习，天天向上",  
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
     "backgroundColor": "#145262"
